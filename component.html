@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Designing dashboards</title>
+    <link rel="stylesheet" href="UI.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/fc4bc3f2a4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="design">
+    <nav class="sidebar">
+      <ul>
+        <li onclick="hideSidebar()">
+          <a href="#"><i class="fa-solid fa-xmark fa-3x"></i></a>
+        </li>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="work.html">Works</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </nav>
+    <nav class="navbar">
+      <ul>
+        <li class="active" id="active-2"><a href="home.html">Home</a></li>
+        <li class="active" id="active-1"><a href="work.html">Works</a></li>
+        <li class="active" id="active-3"><a href="blog.html">Blog</a></li>
+        <li class="active" id="active-4"><a href="">Contact</a></li>
+        <li class="menu-button" onclick="showSidebar()">
+          <a href="#"><i class="fa-solid fa-bars fa-4x"></i></a>
+        </li>
+      </ul>
+    </nav>
+    <section class="design-section">
+      <div class="design-video-text">
+        <h3>
+          Components with <br />
+          usability in mind
+        </h3>
+        <div class="design-video-inner">
+          <h3 id="design-first">2018</h3>
+          <h3 id="design-second">Components, Design</h3>
+        </div>
+        <p>
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+          sint. Velit officia <br />
+          consequat duis enim velit mollit. Exercitation veniam consequat sunt
+          nostrud amet.
+        </p>
+      </div>
+      <main class="design-page">
+        <div class="design1">
+          <img
+            src="images/video_four.png"
+            alt="a dashboard with usability in mind"
+          />
+        </div>
+        <div class="design-heading">
+          <h1>Heading 1</h1>
+          <h2>Heading 2</h2>
+          <p>
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia <br />
+            consequat duis enim velit mollit. Exercitation veniam consequat sunt
+            nostrud amet.
+          </p>
+        </div>
+        <div class="design2">
+          <img src="images/design1.png" alt="a car with a male driver " />
+        </div>
+        <div class="design3">
+          <img src="images/design2.png" alt="a dashboard of a delivery page" />
+        </div>
+      </main>
+    </section>
+    <footer class="socials">
+      <div class="icons">
+        <i class="fa-brands fa-square-facebook fa-2x"></i>
+        <i class="fa-brands fa-instagram fa-2x"></i>
+        <i class="fa-brands fa-twitter fa-2x"></i>
+        <i class="fa-brands fa-linkedin fa-2x"></i>
+      </div>
+      <div class="copyright">
+        <p>Copyright ©2020 All rights reserved</p>
+      </div>
+      <div style="height: 50px;"></div>
+
+    </footer>
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "flex";
+      }
+      function hideSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "none";
+      }
+    </script>
+  </body>
+</html>

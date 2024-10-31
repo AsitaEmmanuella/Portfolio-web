@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <link rel="stylesheet" href="UI.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/fc4bc3f2a4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="blog">
+    <nav class="sidebar">
+      <ul>
+        <li onclick="hideSidebar()">
+          <a href="#"><i class="fa-solid fa-xmark fa-3x"></i></a>
+        </li>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="work.html">Works</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </nav>
+    <nav class="navbar">
+      <ul>
+        <li class="active" id="active-3"><a href="home.html">Home</a></li>
+        <li class="active" id="active-2"><a href="work.html">Works</a></li>
+        <li class="active" id="active-1"><a href="blog.html">Blog</a></li>
+        <li class="active" id="active-4"><a href="">Contact</a></li>
+        <li class="menu-button" onclick="showSidebar()">
+          <a href="#"><i class="fa-solid fa-bars fa-4x"></i></a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <div class="blog-sect">
+        <div class="blog-inner">
+          <div class="blog-head">
+            <h2>Blog</h2>
+          </div>
+          <div class="blog-content">
+            <div class="blog-one">
+              <h3>UI Interactions of the week</h3>
+              <div class="blog-pclass">
+                <p class="blog-p1">12 Feb 2019</p>
+                <div class="blog-vertical-line"></div>
+                <p class="blog-p2">Express, Handlebars</p>
+              </div>
+              <p class="lorem">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia <br />
+                consequat duis enim velit mollit. Exercitation veniam consequat
+                sunt nostrud amet.
+              </p>
+            </div>
+            <hr class="blog-line" />
+            <div class="blog-one">
+              <h3>UI Interactions of the week</h3>
+              <div class="blog-pclass">
+                <p class="blog-p1">12 Feb 2019</p>
+                <div class="blog-vertical-line"></div>
+                <p class="blog-p2">Express, Handlebars</p>
+              </div>
+              <p class="lorem">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia <br />
+                consequat duis enim velit mollit. Exercitation veniam consequat
+                sunt nostrud amet.
+              </p>
+            </div>
+            <hr class="blog-line" />
+            <div class="blog-one">
+              <h3>UI Interactions of the week</h3>
+              <div class="blog-pclass">
+                <p class="blog-p1">12 Feb 2019</p>
+                <div class="blog-vertical-line"></div>
+                <p class="blog-p2">Express, Handlebars</p>
+              </div>
+              <p class="lorem">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia <br />
+                consequat duis enim velit mollit. Exercitation veniam consequat
+                sunt nostrud amet.
+              </p>
+            </div>
+            <hr class="blog-line" />
+            <div class="blog-one">
+              <h3>UI Interactions of the week</h3>
+              <div class="blog-pclass">
+                <p class="blog-p1">12 Feb 2019</p>
+                <div class="blog-vertical-line"></div>
+                <p class="blog-p2">Express, Handlebars</p>
+              </div>
+              <p class="lorem">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia <br />
+                consequat duis enim velit mollit. Exercitation veniam consequat
+                sunt nostrud amet.
+              </p>
+            </div>
+            <hr class="blog-line" />
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="socials">
+      <div class="icons">
+        <i class="fa-brands fa-square-facebook fa-2x"></i>
+        <i class="fa-brands fa-instagram fa-2x"></i>
+        <i class="fa-brands fa-twitter fa-2x"></i>
+        <i class="fa-brands fa-linkedin fa-2x"></i>
+      </div>
+      <div class="copyright">
+        <p>Copyright ©2020 All rights reserved</p>
+      </div>
+      <div style="height: 50px;"></div>
+
+    </footer>
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "flex";
+      }
+      function hideSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "none";
+      }
+    </script>
+  </body>
+</html>

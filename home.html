@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project UI</title>
+    <link rel="stylesheet" href="UI.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/fc4bc3f2a4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="home">
+    <nav class="sidebar">
+      <ul>
+        <li onclick="hideSidebar()">
+          <a href="#"><i class="fa-solid fa-xmark fa-3x"></i></a>
+        </li>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="work.html">Works</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </nav>
+    <nav class="navbar">
+      <ul>
+        <li class="active" id="active-1"><a href="home.html">Home</a></li>
+        <li class="active" id="active-2"><a href="work.html">Works</a></li>
+        <li class="active" id="active-3"><a href="blog.html">Blog</a></li>
+        <li class="active" id="active-4"><a href="">Contact</a></li>
+        <li class="menu-button" onclick="showSidebar()">
+          <a href="#"><i class="fa-solid fa-bars fa-4x"></i></a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <div class="first-sect">
+        <div class="hero-sect">
+          <div class="hero-text">
+            <h2>
+              Hi, I am Ella,<br />
+              Front-end Developer
+            </h2>
+            <p>
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet
+              <br />
+              sint. Velit officia consequat duis enim velit mollit. Exercitation
+              veniam <br />
+              consequat sunt nostrud amet.
+            </p>
+            <button class="resume">Download Resume</button>
+          </div>
+          <div class="hero-img">
+            <img
+              src="images/profile_pic.jpg"
+              alt="profile picture of a smiling man"
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="recent">
+      <div class="inner-recent">
+        <div class="fir">
+          <h4>Recent posts</h4>
+          <a href="">
+            <p>View all</p>
+          </a>
+        </div>
+        <div class="cards">
+          <div class="one">
+            <h3>Making a design system from <br />scratch</h3>
+            <div class="pclass">
+              <p class="p1">12 Feb 2020</p>
+              <div class="vertical-line"></div>
+              <p class="p2">Design, Pattern</p>
+            </div>
+            <p>
+              Amet minim mollit non deserunt ullamco est sit <br />
+              aliqua dolor do amet sint. Velit officia consequat <br />
+              duis enim velit mollit. Exercitation veniam <br />
+              consequat sunt nostrud amet.
+            </p>
+          </div>
+          <div class="two">
+            <h3>Creating pixel perfect icons in <br />Figma</h3>
+            <div class="pclass-two">
+              <p class="p1">12 Feb 2020</p>
+              <div class="vertical-line"></div>
+              <p class="p2">Figma, Icon Design</p>
+            </div>
+            <p>
+              Amet minim mollit non deserunt ullamco est sit <br />
+              aliqua dolor do amet sint. Velit officia consequat <br />
+              duis enim velit mollit. Exercitation veniam <br />
+              consequat sunt nostrud amet.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="works">
+      <div class="feat">
+        <p>Featured works</p>
+      </div>
+      <div class="videos">
+        <div class="video-1">
+          <div class="video-img">
+            <a href="Design.html">
+              <img src="images/video_one.png" alt=" a video clip" />
+            </a>
+          </div>
+          <div class="video-text">
+            <a href="Design.html">
+              <h3>Designing Dashboards</h3>
+              <div class="video-inner">
+                <h3 id="first">2020</h3>
+                <h3 id="second">Dashboard</h3>
+              </div>
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit <br />
+                officia consequat duis enim velit mollit. Exercitation veniam
+                consequat sunt <br />
+                nostrud amet.
+              </p>
+            </a>
+          </div>
+        </div>
+        <hr />
+        <div class="video-2">
+          <div class="video-img-2">
+            <a href="vibrant.html">
+              <img
+                src="images/video_two.png"
+                alt=" a video clip of a beautiful girl"
+              />
+            </a>
+          </div>
+          <div class="video-text-2">
+            <a href="vibrant.html">
+              <h3>Vibrant Portraits of 2020</h3>
+              <div class="video-inner-2">
+                <h3 id="first-2">2018</h3>
+                <h3 id="second-2">Illustration</h3>
+              </div>
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit <br />
+                officia consequat duis enim velit mollit. Exercitation veniam
+                consequat sunt <br />
+                nostrud amet.
+              </p>
+            </a>
+          </div>
+        </div>
+        <hr />
+        <div class="video-3">
+          <div class="video-img-3">
+            <a href="36_days.html">
+              <img src="images/video_three.png" alt=" a video clip" />
+            </a>
+          </div>
+          <div class="video-text-3">
+            <a href="36_days.html">
+              <h3>36 Days of Malayalam type</h3>
+              <div class="video-inner-3">
+                <h3 id="first-3">2018</h3>
+                <h3 id="second-3">Typography</h3>
+              </div>
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit <br />
+                officia consequat duis enim velit mollit. Exercitation veniam
+                consequat sunt <br />
+                nostrud amet.
+              </p>
+            </a>
+          </div>
+        </div>
+        <hr />
+      </div>
+    </section>
+    <footer class="socials">
+      <div class="icons">
+        <i class="fa-brands fa-square-facebook fa-2x"></i>
+        <i class="fa-brands fa-instagram fa-2x"></i>
+        <i class="fa-brands fa-twitter fa-2x"></i>
+        <i class="fa-brands fa-linkedin fa-2x"></i>
+      </div>
+      <div class="copyright">
+        <p>Copyright ©2020 All rights reserved</p>
+      </div>
+      <div style="height: 50px;"></div>
+
+    </footer>
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "flex";
+      }
+      function hideSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "none";
+      }
+    </script>
+  </body>
+</html>
